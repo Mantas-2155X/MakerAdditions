@@ -9,7 +9,7 @@ using CharaCustom;
 
 using UnityEngine.UI;
 
-namespace HS2_MakerAdditions
+namespace AI_MakerAdditions
 {
     public static class Hooks
     {
@@ -44,8 +44,8 @@ namespace HS2_MakerAdditions
             {
                 if (index <= 0)
                 {
-                    HS2_MakerAdditions.Logger.LogMessage("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' f1 index not found!");
-                    HS2_MakerAdditions.Logger.LogWarning("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' f1 index not found!");
+                    AI_MakerAdditions.Logger.LogMessage("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' f1 index not found!");
+                    AI_MakerAdditions.Logger.LogWarning("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' f1 index not found!");
                     return il;
                 }
 
@@ -66,8 +66,8 @@ namespace HS2_MakerAdditions
             {
                 if (index <= 0)
                 {
-                    HS2_MakerAdditions.Logger.LogMessage("Failed transpiling 'ChaControl_SetAccessoryRot_ChangeLimit' Conv_I4 index not found!");
-                    HS2_MakerAdditions.Logger.LogWarning("Failed transpiling 'ChaControl_SetAccessoryRot_ChangeLimit' Conv_I4 index not found!");
+                    AI_MakerAdditions.Logger.LogMessage("Failed transpiling 'ChaControl_SetAccessoryRot_ChangeLimit' Conv_I4 index not found!");
+                    AI_MakerAdditions.Logger.LogWarning("Failed transpiling 'ChaControl_SetAccessoryRot_ChangeLimit' Conv_I4 index not found!");
                     return il;
                 }
 
@@ -81,8 +81,8 @@ namespace HS2_MakerAdditions
             {
                 if (index <= 0)
                 {
-                    HS2_MakerAdditions.Logger.LogMessage("Failed transpiling 'ChaControl_SetAccessoryRot_ChangeLimit' Repeat index not found!");
-                    HS2_MakerAdditions.Logger.LogWarning("Failed transpiling 'ChaControl_SetAccessoryRot_ChangeLimit' Repeat index not found!");
+                    AI_MakerAdditions.Logger.LogMessage("Failed transpiling 'ChaControl_SetAccessoryRot_ChangeLimit' Repeat index not found!");
+                    AI_MakerAdditions.Logger.LogWarning("Failed transpiling 'ChaControl_SetAccessoryRot_ChangeLimit' Repeat index not found!");
                     return il;
                 }
 
@@ -111,7 +111,7 @@ namespace HS2_MakerAdditions
             var scrollObj = __instance.transform.Find("Scroll View/Scrollbar Vertical");
             var scrollbar = scrollObj.GetComponent<Scrollbar>();
 
-            HS2_MakerAdditions.instance.StartCoroutine(Tools.ApplyScroller(scrollbar, __state));
+            AI_MakerAdditions.instance.StartCoroutine(Tools.ApplyScroller(scrollbar, __state));
         }
         
         [HarmonyPrefix, HarmonyPatch(typeof(CustomClothesWindow), "Sort")]
@@ -130,7 +130,7 @@ namespace HS2_MakerAdditions
             var scrollObj = __instance.transform.Find("Scroll View/Scrollbar Vertical");
             var scrollbar = scrollObj.GetComponent<Scrollbar>();
 
-            HS2_MakerAdditions.instance.StartCoroutine(Tools.ApplyScroller(scrollbar, __state));
+            AI_MakerAdditions.instance.StartCoroutine(Tools.ApplyScroller(scrollbar, __state));
         }
     }
 }

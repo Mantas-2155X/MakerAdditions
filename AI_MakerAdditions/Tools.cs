@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
 
-namespace HS2_MakerAdditions
+namespace AI_MakerAdditions
 {
     public static class Tools
     {
