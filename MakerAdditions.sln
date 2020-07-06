@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HS2_MakerAdditions", "HS2_MakerAdditions\HS2_MakerAdditions.csproj", "{23057B5D-4347-44A6-9815-FCA34600F474}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI_MakerAdditions", "AI_MakerAdditions\AI_MakerAdditions.csproj", "{7D4C7DE5-DD31-4710-87C8-E7607F87E025}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23057B5D-4347-44A6-9815-FCA34600F474}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23057B5D-4347-44A6-9815-FCA34600F474}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23057B5D-4347-44A6-9815-FCA34600F474}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23057B5D-4347-44A6-9815-FCA34600F474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4C7DE5-DD31-4710-87C8-E7607F87E025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4C7DE5-DD31-4710-87C8-E7607F87E025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4C7DE5-DD31-4710-87C8-E7607F87E025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4C7DE5-DD31-4710-87C8-E7607F87E025}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
