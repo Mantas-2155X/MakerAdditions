@@ -60,6 +60,10 @@
           <HintPath>..\..\..\..\..\..\media\illusion\Ai-Syoujyo\AI-Syoujyo_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
             <Private>False</Private>
         </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\..\media\illusion\Ai-Shoujo\AI-Shoujo_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
         <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\..\..\..\..\..\media\illusion\Ai-Syoujyo\AI-Syoujyo_Data\Managed\UnityEngine.UI.dll</HintPath>
             <Private>False</Private>

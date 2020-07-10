@@ -36,6 +36,7 @@ namespace AI_MakerAdditions
             {
                 var orig = __instance.transform.Find(target + "/imgRbCol02");
                 var text = __instance.transform.Find(target + "/textRate");
+                text.GetComponent<Text>().alignment = TextAnchor.MiddleLeft;
 
                 var copy = Object.Instantiate(orig, orig.transform.parent);
                 copy.name = "imgRbCol00_001";
@@ -51,8 +52,8 @@ namespace AI_MakerAdditions
                 var oldMinText = rectText.offsetMin;
                 var oldMaxText = rectText.offsetMax;
 
-                rectText.offsetMin = new Vector2(oldMinText.x - 80, oldMinText.y);
-                rectText.offsetMax = new Vector2(oldMaxText.x - 80, oldMaxText.y);
+                rectText.offsetMin = new Vector2(0, oldMinText.y);
+                rectText.offsetMax = new Vector2(90, oldMaxText.y);
 
                 var textrbObj = copy.transform.Find("textRbSelect");
                 textrbObj.GetComponent<Text>().text = target == "grpPos" ? "0.01" : "0.1";
