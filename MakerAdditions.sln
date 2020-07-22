@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI_MakerAdditions", "AI_Mak
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KK_MakerAdditions", "KK_MakerAdditions\KK_MakerAdditions.csproj", "{F86505EE-D874-4CB2-9BB0-F41810E96EAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EC_MakerAdditions", "EC_MakerAdditions\EC_MakerAdditions.csproj", "{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{F86505EE-D874-4CB2-9BB0-F41810E96EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F86505EE-D874-4CB2-9BB0-F41810E96EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F86505EE-D874-4CB2-9BB0-F41810E96EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

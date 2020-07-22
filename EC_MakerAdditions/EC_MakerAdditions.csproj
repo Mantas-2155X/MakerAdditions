@@ -4,11 +4,11 @@
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{F86505EE-D874-4CB2-9BB0-F41810E96EAD}</ProjectGuid>
+        <ProjectGuid>{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>KK_MakerAdditions</RootNamespace>
-        <AssemblyName>KK_MakerAdditions</AssemblyName>
+        <RootNamespace>EC_MakerAdditions</RootNamespace>
+        <AssemblyName>EC_MakerAdditions</AssemblyName>
         <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -26,26 +26,26 @@
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugType>none</DebugType>
         <Optimize>true</Optimize>
-        <OutputPath>../_bin/KK/BepInEx/plugins/2155X/</OutputPath>
+        <OutputPath>../_bin/EC/BepInEx/plugins/2155X/</OutputPath>
         <DefineConstants>TRACE</DefineConstants>
         <ErrorReport>prompt</ErrorReport>
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="0Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\BepInEx\core\0Harmony.dll</HintPath>
+          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\BepInEx\core\0Harmony.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\Koikatu_Data\Managed\Assembly-CSharp.dll</HintPath>
+          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\Assembly-CSharp.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="BepInEx, Version=5.2.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\BepInEx\core\BepInEx.dll</HintPath>
+          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\BepInEx\core\BepInEx.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\BepInEx\core\BepInEx.Harmony.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="System" />
@@ -53,21 +53,29 @@
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
         <Reference Include="TextMeshPro-1.0.55.56.0b12, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\Koikatu_Data\Managed\TextMeshPro-1.0.55.56.0b12.dll</HintPath>
+          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\TextMeshPro-1.0.55.56.0b12.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\Koikatu_Data\Managed\UnityEngine.dll</HintPath>
+          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\UnityEngine.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\Koikatu_Data\Managed\UnityEngine.UI.dll</HintPath>
+          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\UnityEngine.UI.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\UnityEngine.UIModule.dll</HintPath>
             <Private>False</Private>
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="EC_MakerAdditions.cs" />
         <Compile Include="Hooks.cs" />
-        <Compile Include="KK_MakerAdditions.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Tools.cs" />
     </ItemGroup>
