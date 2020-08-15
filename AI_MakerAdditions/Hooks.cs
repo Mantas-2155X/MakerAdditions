@@ -33,23 +33,42 @@ namespace AI_MakerAdditions
             digit = 2;
         }
         
-        // Change filter to allow two digits
+        // Change filter to allow two digits, unlock pos limit
         [HarmonyTranspiler, HarmonyPatch(typeof(ChaControl), "SetAccessoryPos")]
         public static IEnumerable<CodeInstruction> ChaControl_SetAccessoryPos_ChangeLimit(IEnumerable<CodeInstruction> instructions)
         {
             var il = instructions.ToList();
-            
-            var items = il.FindAll(instruction => instruction.opcode == OpCodes.Ldstr && (string)instruction.operand == "f1");
-            foreach (var index in items.Select(item => il.IndexOf(item)).ToList())
-            {
-                if (index <= 0)
-                {
-                    AI_MakerAdditions.Logger.LogMessage("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' f1 index not found!");
-                    AI_MakerAdditions.Logger.LogWarning("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' f1 index not found!");
-                    return il;
-                }
 
-                il[index].operand = "f2";
+            {
+                var items = il.FindAll(instruction => instruction.opcode == OpCodes.Ldstr && (string)instruction.operand == "f1");
+                foreach (var index in items.Select(item => il.IndexOf(item)).ToList())
+                {
+                    if (index <= 0)
+                    {
+                        AI_MakerAdditions.Logger.LogMessage("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' f1 index not found!");
+                        AI_MakerAdditions.Logger.LogWarning("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' f1 index not found!");
+                        return il;
+                    }
+
+                    il[index].operand = "f2";
+                }
+            }
+
+            {
+                var items = il.FindAll(instruction => instruction.opcode == OpCodes.Call && (instruction.operand as MethodInfo)?.Name == "Clamp");
+                foreach (var index in items.Select(item => il.IndexOf(item)).ToList())
+                {
+                    if (index <= 0)
+                    {
+                        AI_MakerAdditions.Logger.LogMessage("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' Clamp index not found!");
+                        AI_MakerAdditions.Logger.LogWarning("Failed transpiling 'ChaControl_SetAccessoryPos_ChangeLimit' Clamp index not found!");
+                        return il;
+                    }
+
+                    il[index - 2].opcode = OpCodes.Nop;
+                    il[index - 1].opcode = OpCodes.Nop;
+                    il[index].opcode = OpCodes.Nop;
+                }
             }
 
             return il;
