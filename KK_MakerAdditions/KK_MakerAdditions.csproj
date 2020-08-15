@@ -40,12 +40,20 @@
           <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\Koikatu_Data\Managed\Assembly-CSharp.dll</HintPath>
             <Private>False</Private>
         </Reference>
+        <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\illusion\Koikatu\Koikatu_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
         <Reference Include="BepInEx, Version=5.2.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\BepInEx\core\BepInEx.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\..\..\..\..\..\media\illusion\Koikatu\BepInEx\core\BepInEx.Harmony.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="KKAPI, Version=1.13.1.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\illusion\Koikatu\BepInEx\plugins\KKAPI.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="System" />

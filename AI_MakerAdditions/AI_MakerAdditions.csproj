@@ -36,6 +36,10 @@
           <HintPath>..\..\..\..\..\..\media\illusion\Ai-Syoujyo\BepInEx\core\0Harmony.dll</HintPath>
             <Private>False</Private>
         </Reference>
+        <Reference Include="AIAPI, Version=1.13.1.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\illusion\Ai-Syoujyo\BepInEx\Plugins\AIAPI.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
         <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\..\..\..\..\..\media\illusion\Ai-Syoujyo\AI-Syoujyo_Data\Managed\Assembly-CSharp.dll</HintPath>
             <Private>False</Private>
@@ -52,6 +56,10 @@
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
+        <Reference Include="UniRx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\..\media\illusion\Ai-Syoujyo\AI-Syoujyo_Data\Managed\UniRx.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
         <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\..\..\..\..\..\media\illusion\Ai-Syoujyo\AI-Syoujyo_Data\Managed\UnityEngine.dll</HintPath>
             <Private>False</Private>

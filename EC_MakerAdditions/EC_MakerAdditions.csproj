@@ -48,12 +48,20 @@
           <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\BepInEx\core\BepInEx.Harmony.dll</HintPath>
             <Private>False</Private>
         </Reference>
+        <Reference Include="ECAPI, Version=1.13.1.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\illusion\Emotion Creators\BepInEx\plugins\ECAPI.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
         <Reference Include="TextMeshPro-1.0.55.56.0b12, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
           <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\TextMeshPro-1.0.55.56.0b12.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UniRx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\..\illusion\Emotion Creators\EmotionCreators_Data\Managed\UniRx.dll</HintPath>
             <Private>False</Private>
         </Reference>
         <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
