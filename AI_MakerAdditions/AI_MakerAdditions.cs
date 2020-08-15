@@ -6,6 +6,7 @@ using HarmonyLib;
 
 using AIChara;
 using CharaCustom;
+
 using KKAPI.Maker;
 using KKAPI.Maker.UI.Sidebar;
 
