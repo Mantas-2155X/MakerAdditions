@@ -124,7 +124,7 @@ namespace AI_MakerAdditions
         [HarmonyPostfix, HarmonyPatch(typeof(CustomCharaWindow), "Sort")]
         public static void CustomCharaWindow_Sort_ApplyScroll(CustomCharaWindow __instance, float __state)
         {
-            if (__state == 1f)
+            if (__state == 1f || !KKAPI.Maker.MakerAPI.InsideAndLoaded)
                 return;
             
             var scrollObj = __instance.transform.Find("Scroll View/Scrollbar Vertical");
@@ -143,7 +143,7 @@ namespace AI_MakerAdditions
         [HarmonyPostfix, HarmonyPatch(typeof(CustomClothesWindow), "Sort")]
         public static void CustomClothesWindow_Sort_ApplyScroll(CustomClothesWindow __instance, float __state)
         {
-            if (__state == 1f)
+            if (__state == 1f || !KKAPI.Maker.MakerAPI.InsideAndLoaded)
                 return;
             
             var scrollObj = __instance.transform.Find("Scroll View/Scrollbar Vertical");
