@@ -117,6 +117,7 @@ namespace HS2_MakerAdditions
         [HarmonyPrefix, HarmonyPatch(typeof(CustomCharaWindow), "Sort")]
         public static void CustomCharaWindow_Sort_SaveScroll(CustomCharaWindow __instance, out float __state)
         {
+            HS2_MakerAdditions.Logger.LogInfo("Sorting: " + System.Environment.StackTrace);
             var scrollObj = __instance.transform.Find("Scroll View/Scrollbar Vertical");
             __state = scrollObj.GetComponent<Scrollbar>().value;
         }
@@ -124,7 +125,7 @@ namespace HS2_MakerAdditions
         [HarmonyPostfix, HarmonyPatch(typeof(CustomCharaWindow), "Sort")]
         public static void CustomCharaWindow_Sort_ApplyScroll(CustomCharaWindow __instance, float __state)
         {
-            if (__state == 1f)
+            if (__state == 1f || !KKAPI.Maker.MakerAPI.InsideAndLoaded)
                 return;
             
             var scrollObj = __instance.transform.Find("Scroll View/Scrollbar Vertical");
