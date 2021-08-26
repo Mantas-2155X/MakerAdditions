@@ -9,7 +9,7 @@
         <AppDesignerFolder>Properties</AppDesignerFolder>
         <RootNamespace>EC_MakerAdditions</RootNamespace>
         <AssemblyName>EC_MakerAdditions</AssemblyName>
-        <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+        <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,53 +32,61 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="0Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\BepInEx\core\0Harmony.dll</HintPath>
-            <Private>False</Private>
+        <Reference Include="0Harmony, Version=2.5.4.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\IllusionLibs.BepInEx.Harmony.2.5.4\lib\net35\0Harmony.dll</HintPath>
+          <Private>false</Private>
         </Reference>
         <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\Assembly-CSharp.dll</HintPath>
-            <Private>False</Private>
+          <HintPath>..\packages\IllusionLibs.EmotionCreators.Assembly-CSharp.2019.6.6.4\lib\net46\Assembly-CSharp.dll</HintPath>
+            <Private>false</Private>
         </Reference>
-        <Reference Include="BepInEx, Version=5.2.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\BepInEx\core\BepInEx.dll</HintPath>
-            <Private>False</Private>
+        <Reference Include="BepInEx, Version=5.4.15.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\IllusionLibs.BepInEx.5.4.15\lib\net35\BepInEx.dll</HintPath>
+          <Private>false</Private>
         </Reference>
-        <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\BepInEx\core\BepInEx.Harmony.dll</HintPath>
-            <Private>False</Private>
+        <Reference Include="ECAPI, Version=1.23.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\IllusionModdingAPI.ECAPI.1.23.0\lib\net46\ECAPI.dll</HintPath>
+          <Private>false</Private>
         </Reference>
-        <Reference Include="ECAPI, Version=1.13.1.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\illusion\Emotion Creators\BepInEx\plugins\ECAPI.dll</HintPath>
-            <Private>False</Private>
+        <Reference Include="EC_ExtensibleSaveFormat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\ExtensibleSaveFormat.EmotionCreators.16.4.0\lib\net46\EC_ExtensibleSaveFormat.dll</HintPath>
+          <Private>false</Private>
+        </Reference>
+        <Reference Include="IL, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\IllusionLibs.EmotionCreators.IL.2019.6.6\lib\net46\IL.dll</HintPath>
+          <Private>false</Private>
         </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="System.Data" />
         <Reference Include="System.Xml" />
         <Reference Include="TextMeshPro-1.0.55.56.0b12, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\TextMeshPro-1.0.55.56.0b12.dll</HintPath>
-            <Private>False</Private>
+          <HintPath>..\packages\IllusionLibs.EmotionCreators.TextMeshPro.2019.6.6.4\lib\net46\TextMeshPro-1.0.55.56.0b12.dll</HintPath>
+          <Private>false</Private>
         </Reference>
         <Reference Include="UniRx, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\illusion\Emotion Creators\EmotionCreators_Data\Managed\UniRx.dll</HintPath>
-            <Private>False</Private>
+          <HintPath>..\packages\IllusionLibs.EmotionCreators.UniRx.2019.6.6.4\lib\net46\UniRx.dll</HintPath>
+            <Private>false</Private>
         </Reference>
         <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\UnityEngine.dll</HintPath>
-            <Private>False</Private>
+          <HintPath>..\packages\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.2017.4.24.4\lib\net46\UnityEngine.dll</HintPath>
+            <Private>false</Private>
         </Reference>
         <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-            <Private>False</Private>
+          <HintPath>..\packages\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.2017.4.24.4\lib\net46\UnityEngine.CoreModule.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\packages\IllusionLibs.EmotionCreators.UnityEngine.TextRenderingModule.2017.4.24.4\lib\net46\UnityEngine.TextRenderingModule.dll</HintPath>
+            <Private>false</Private>
         </Reference>
         <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\UnityEngine.UI.dll</HintPath>
-            <Private>False</Private>
+          <HintPath>..\packages\IllusionLibs.EmotionCreators.UnityEngine.UI.2017.4.24.4\lib\net46\UnityEngine.UI.dll</HintPath>
+            <Private>false</Private>
         </Reference>
         <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\..\..\..\..\media\illusion\Emotion Creators\EmotionCreators_Data\Managed\UnityEngine.UIModule.dll</HintPath>
-            <Private>False</Private>
+          <HintPath>..\packages\IllusionLibs.EmotionCreators.UnityEngine.UIModule.2017.4.24.4\lib\net46\UnityEngine.UIModule.dll</HintPath>
+            <Private>false</Private>
         </Reference>
     </ItemGroup>
     <ItemGroup>
@@ -87,7 +95,31 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="Tools.cs" />
     </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
+    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <Import Project="..\packages\IllusionLibs.EmotionCreators.Assembly-CSharp.2019.6.6.4\build\IllusionLibs.EmotionCreators.Assembly-CSharp.targets" Condition="Exists('..\packages\IllusionLibs.EmotionCreators.Assembly-CSharp.2019.6.6.4\build\IllusionLibs.EmotionCreators.Assembly-CSharp.targets')" />
+    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+      <PropertyGroup>
+        <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
+      </PropertyGroup>
+      <Error Condition="!Exists('..\packages\IllusionLibs.EmotionCreators.Assembly-CSharp.2019.6.6.4\build\IllusionLibs.EmotionCreators.Assembly-CSharp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IllusionLibs.EmotionCreators.Assembly-CSharp.2019.6.6.4\build\IllusionLibs.EmotionCreators.Assembly-CSharp.targets'))" />
+      <Error Condition="!Exists('..\packages\IllusionLibs.EmotionCreators.UniRx.2019.6.6.4\build\IllusionLibs.EmotionCreators.UniRx.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IllusionLibs.EmotionCreators.UniRx.2019.6.6.4\build\IllusionLibs.EmotionCreators.UniRx.targets'))" />
+      <Error Condition="!Exists('..\packages\IllusionLibs.EmotionCreators.UnityEngine.UI.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.UI.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IllusionLibs.EmotionCreators.UnityEngine.UI.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.UI.targets'))" />
+      <Error Condition="!Exists('..\packages\IllusionLibs.EmotionCreators.UnityEngine.UIModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.UIModule.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IllusionLibs.EmotionCreators.UnityEngine.UIModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.UIModule.targets'))" />
+      <Error Condition="!Exists('..\packages\IllusionLibs.EmotionCreators.UnityEngine.TextRenderingModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.TextRenderingModule.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IllusionLibs.EmotionCreators.UnityEngine.TextRenderingModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.TextRenderingModule.targets'))" />
+      <Error Condition="!Exists('..\packages\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.targets'))" />
+      <Error Condition="!Exists('..\packages\IllusionLibs.BepInEx.Harmony.2.5.4\build\IllusionLibs.BepInEx.Harmony.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IllusionLibs.BepInEx.Harmony.2.5.4\build\IllusionLibs.BepInEx.Harmony.targets'))" />
+      <Error Condition="!Exists('..\packages\IllusionLibs.EmotionCreators.TextMeshPro.2019.6.6.4\build\IllusionLibs.EmotionCreators.TextMeshPro.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IllusionLibs.EmotionCreators.TextMeshPro.2019.6.6.4\build\IllusionLibs.EmotionCreators.TextMeshPro.targets'))" />
+    </Target>
+    <Import Project="..\packages\IllusionLibs.EmotionCreators.UniRx.2019.6.6.4\build\IllusionLibs.EmotionCreators.UniRx.targets" Condition="Exists('..\packages\IllusionLibs.EmotionCreators.UniRx.2019.6.6.4\build\IllusionLibs.EmotionCreators.UniRx.targets')" />
+    <Import Project="..\packages\IllusionLibs.EmotionCreators.UnityEngine.UI.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.UI.targets" Condition="Exists('..\packages\IllusionLibs.EmotionCreators.UnityEngine.UI.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.UI.targets')" />
+    <Import Project="..\packages\IllusionLibs.EmotionCreators.UnityEngine.UIModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.UIModule.targets" Condition="Exists('..\packages\IllusionLibs.EmotionCreators.UnityEngine.UIModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.UIModule.targets')" />
+    <Import Project="..\packages\IllusionLibs.EmotionCreators.UnityEngine.TextRenderingModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.TextRenderingModule.targets" Condition="Exists('..\packages\IllusionLibs.EmotionCreators.UnityEngine.TextRenderingModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.TextRenderingModule.targets')" />
+    <Import Project="..\packages\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.targets" Condition="Exists('..\packages\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.2017.4.24.4\build\IllusionLibs.EmotionCreators.UnityEngine.CoreModule.targets')" />
+    <Import Project="..\packages\IllusionLibs.BepInEx.Harmony.2.5.4\build\IllusionLibs.BepInEx.Harmony.targets" Condition="Exists('..\packages\IllusionLibs.BepInEx.Harmony.2.5.4\build\IllusionLibs.BepInEx.Harmony.targets')" />
+    <Import Project="..\packages\IllusionLibs.EmotionCreators.TextMeshPro.2019.6.6.4\build\IllusionLibs.EmotionCreators.TextMeshPro.targets" Condition="Exists('..\packages\IllusionLibs.EmotionCreators.TextMeshPro.2019.6.6.4\build\IllusionLibs.EmotionCreators.TextMeshPro.targets')" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
     <Target Name="BeforeBuild">

@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KK_MakerAdditions", "KK_Mak
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EC_MakerAdditions", "EC_MakerAdditions\EC_MakerAdditions.csproj", "{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KKS_MakerAdditions", "KKS_MakerAdditions\KKS_MakerAdditions.csproj", "{94B2F800-C748-45E4-8AD1-0F08D601B931}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F20D0DE9-B1AF-48A4-A9D3-8B407AC91746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B2F800-C748-45E4-8AD1-0F08D601B931}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B2F800-C748-45E4-8AD1-0F08D601B931}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B2F800-C748-45E4-8AD1-0F08D601B931}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B2F800-C748-45E4-8AD1-0F08D601B931}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
