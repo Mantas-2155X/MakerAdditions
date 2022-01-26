@@ -17,7 +17,7 @@ namespace KK_MakerAdditions
     [BepInPlugin(nameof(KK_MakerAdditions), nameof(KK_MakerAdditions), VERSION)]
     public class KK_MakerAdditions : BaseUnityPlugin
     {
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.0.1";
         
         public new static ManualLogSource Logger;
         

@@ -19,7 +19,7 @@ namespace HS2_MakerAdditions
     [BepInPlugin(nameof(HS2_MakerAdditions), nameof(HS2_MakerAdditions), VERSION)]
     public class HS2_MakerAdditions : BaseUnityPlugin
     {
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.0.1";
         
         public new static ManualLogSource Logger;
         

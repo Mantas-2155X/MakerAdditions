@@ -20,7 +20,7 @@ namespace AI_MakerAdditions
     [BepInPlugin(nameof(AI_MakerAdditions), nameof(AI_MakerAdditions), VERSION)]
     public class AI_MakerAdditions : BaseUnityPlugin
     {
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.0.1";
         
         public new static ManualLogSource Logger;
         
